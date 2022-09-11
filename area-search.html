@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="献立に悩み解消！あともう一品の料理が見つかる！
+    素材にこだわった安心食品をご自宅までお届けします。
+    出前注文ネット予約サイトです。">
+    <title>テイクアウト・スマイル新潟｜安心食品デリバリー！ネット注文予約サイト</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jqueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ajaxzip3の読み込み -->
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="header-inner">
+                    <div class="logo-img">
+                        <a class="header-logo" href="index.html"><img src="images/shibatashokki.logo1.gif" alt="ロゴ画像"></a>
+                    </div>
+                    <!-- <button class="toggle-menu-btn"></button> -->
+                    <div class="header-right">
+                        <nav class="site-menu">
+                            <ul>
+                                <li><a href="#"><img src="images/cart.gif" alt="カート画像"></a></li>
+                                <li><a href="#"><img src="images/login.gif" alt="マイページ画像"></a></li>
+                            </ul>
+                        </nav>
+                        <div class="business-hours">
+                            <img src="images/header-item.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="header-page">
+                    <a href="about.html">テイクアウトスマイルとは</a>
+                </div>
+                <div class="header-page">
+                    <a href="order.html">デリバリー注文方法</a>
+                </div>
+                <div class="header-page">
+                    <a href="area-search.html">配達可能エリア検索</a>
+                </div>
+                <div class="header-page">
+                    <a href="commitment.html">こだわり素材</a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="title">
+                <h2>配達可能エリア検索</h2>
+            </div>
+
+            <form action="#">
+                <div class="seach-group">
+                    <label>郵便番号(ハイフンもOK)</label>
+                    <input type="text" name="zip01" maxlength="8" placeholder="1234567"
+                        onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');">
+                </div>
+                <div class="seach-group">
+                    <label>都道府県</label>
+                    <input type="text" name="pref01" placeholder="新潟県">
+                </div>
+                <div class="seach-group">
+                    <label>以降の住所</label>
+                    <input type="text" name="addr01" placeholder="新潟市〇〇区">
+                </div>
+                <div class="seach-btn">
+                    <button class="seach-button" type="submit">検索する</button>
+                </div>
+            </form>
+
+            <div class="shop-map">
+                <p class="shop-name">「テイクアウト・スマイル 新潟」</p>
+                <p class="information">新潟市中央区南笹口 1-1</p>
+                <p class="information">営業時間 8:00~20:00</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.9475724365284!2d139.06213791467678!3d37.90828811224084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4c99c37da5283%3A0xc8e559f1ad6c2310!2z44CSOTUwLTA5MTIg5paw5r2f55yM5paw5r2f5biC5Lit5aSu5Yy65Y2X56y55Y-j77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1659062561507!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/shibatashokki.logo1.gif" alt="ロゴ画像"></a>
+                </div>
+                <div class="footer-menu">
+                    <a href="#">会社案内</a>
+                    <a href="#">グループ店舗</a>
+                    <a href="#">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                </div>
+                <div class="footer-tell-group">
+                    <p class="footer-tell">お電話でのお問い合わせ<br>
+                        &phone; 0120-12-3456<br>
+                        (受付時間 8:00~20:00)</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; takeout smile niigata.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
